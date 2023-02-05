@@ -6,7 +6,6 @@ function App() {
   const [css, setCss] = useState("")
   const [js, setJs] = useState("")
   const [srcDoc, setSrcDoc] = useState('')
-
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSrcDoc(`
@@ -27,7 +26,7 @@ function App() {
         <Editor
           language="xml"
           displayName="HTML"
-          value={html}
+          value={html} 
           onChange={setHtml}
         />
         <Editor
